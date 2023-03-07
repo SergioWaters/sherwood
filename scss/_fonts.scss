@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 300;
+  src: local("Inter Light"),
+    url(../fonts/inter/inter-variable.ttf) format("truetype"),
+    url(../fonts/inter/static/inter-light-300.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Sensei";
+  font-weight: 500;
+  src: local("Sensei Medium"),
+    url(../fonts/sensei-medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Caveat";
+  font-weight: 400;
+  src: local("Caveat Regular"),
+    url(../fonts/caveat/caveat-regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Caveat";
+  font-weight: 700;
+  src: local("Caveat Bold"),
+    url(../fonts/caveat/caveat-bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Adigiana extreme";
+  font-weight: 400;
+  src: local("Adigiana extreme"),
+    url(../fonts/adigiana_extreme.ttf) format("truetype");
+}

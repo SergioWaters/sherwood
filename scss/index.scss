@@ -1,0 +1,65 @@
+@import "./normalize";
+@import "./fonts";
+@import "./vars";
+@import "./burger";
+@import "./ui-kit";
+@import "./sku";
+@import "./header";
+@import "./main_about";
+@import "./main-promo";
+@import "./main-popular";
+@import "./main-sale";
+@import "./main-daily";
+@import "./main_articles";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #484848;
+}
+
+.wrapper {
+  background-color: $bgcollight;
+  color: $fcolprime;
+  fill: $fcolprime;
+  font-size: 20px;
+  @include font-inter-400;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1300px;
+
+  @media (max-width: 1320px) {
+    max-width: 90%;
+  }
+}
+
+.main section {
+  margin: 0 0 100px 0;
+
+  & h1 {
+    @include font-prata-400;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 40px 0 40px 20px;
+    color: $fcolprime;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 1300px) {
+    padding: 0 10px;
+  }
+
+  @media (max-width: 770px) {
+    margin: 60px 0 0 0;
+  }
+}

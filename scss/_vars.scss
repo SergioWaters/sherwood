@@ -1,0 +1,66 @@
+//colors
+
+$transition: 0.3s ease;
+$primarycolor: #303030;
+$bgcollight: #fff8e8;
+$bgcoldark: #c9e165;
+$fcolprime: #25520f;
+$fcolside: #ff99d8;
+
+//fonts
+
+@mixin font-prata-400 {
+  font-family: "Adigiana extreme", serif;
+  font-weight: 400;
+}
+
+@mixin font-inter-300 {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+// @mixin font-inter-500 {
+//   font-family: "Inter", sans-serif;
+//   font-weight: 500;
+// }
+
+@mixin font-inter-400 {
+  font-family: "Caveat", sans-serif;
+  font-weight: 400;
+}
+
+@mixin font-inter-500 {
+  font-family: "Sensei", sans-serif;
+  font-weight: 500;
+}
+
+@mixin font-inter-600 {
+  font-family: "Caveat", sans-serif;
+  font-weight: 700;
+}
+
+// Animation
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+
+  80% {
+    transform: scaleY(1.1);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes shrinkUp {
+  0% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleY(0);
+  }
+}

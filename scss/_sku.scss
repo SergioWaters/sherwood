@@ -1,0 +1,103 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+  transition: $transition;
+  width: 280px;
+  background-color: transparent;
+  padding: 150px 0 0 0;
+
+  &_description {
+    background-color: $bgcoldark;
+    border-radius: 10px;
+    padding: 40px 20px 20px;
+
+    & .title {
+      margin-bottom: 20px;
+    }
+  }
+
+  &_icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 98;
+
+    & .card_icon {
+      margin: 5px;
+    }
+  }
+
+  &_slider {
+    min-width: 0;
+    display: flex;
+    width: 200px;
+    height: 200px;
+
+    & img {
+      border: none;
+      border-radius: 50%;
+    }
+
+    &_wrapper {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 50%;
+      border: none;
+      background-color: $fcolside;
+      padding: 5px;
+    }
+
+    &__pagination {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      display: flex;
+      left: 0;
+      bottom: 7px;
+      width: 100%;
+      z-index: 1;
+
+      & .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 2px;
+      }
+
+      & .slick-dots li {
+        font-size: 0;
+        list-style: none;
+      }
+
+      & .slick-dots li button {
+        border: 1px solid $fcolprime;
+        border-radius: 50%;
+        height: 8px;
+        width: 8px;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      & .slick-dots li.slick-active button {
+        background-color: $fcolprime;
+        border: none;
+      }
+    }
+
+    & .slick-list {
+      overflow: hidden;
+    }
+
+    & .slick-track {
+      display: flex;
+    }
+  }
+}

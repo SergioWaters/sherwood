@@ -1,0 +1,157 @@
+.main_promo {
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+
+  & h1 {
+    @include font-prata-400;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__slide {
+    height: 500px;
+    width: 100%;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $bgcoldark;
+    border-radius: 10px;
+
+    & h1 {
+      @include font-prata-400;
+      font-size: 50px;
+      line-height: 50px;
+      text-transform: uppercase;
+    }
+
+    & h3 {
+      @include font-prata-400;
+      font-size: 20px;
+      line-height: 20px;
+      margin: 54px 0 30px 0;
+    }
+
+    & .button-dark {
+    }
+  }
+
+  & .button-circle-left {
+    position: absolute;
+    top: 223px;
+    left: 24px;
+  }
+
+  & .button-circle-right {
+    position: absolute;
+    top: 223px;
+    right: 24px;
+  }
+
+  &_slider {
+    min-width: 0;
+    display: flex;
+
+    &__pagination {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      display: flex;
+      bottom: 24px;
+      width: 100%;
+      z-index: 999;
+
+      & .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      & .slick-dots li {
+        font-size: 0;
+        list-style: none;
+        margin: 0px 4px;
+      }
+
+      & .slick-dots li button {
+        border: 1px solid #303030;
+        border-radius: 50%;
+        height: 8px;
+        width: 8px;
+        background-color: transparent;
+        cursor: pointer;
+      }
+
+      & .slick-dots li.slick-active button {
+        background-color: #303030;
+        border: none;
+      }
+    }
+
+    & .slick-list {
+      overflow: hidden;
+    }
+
+    & .slick-track {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .main_promo {
+    &__slide {
+      background-position: top left, top right;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .main_promo {
+    &__slide {
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .main_promo {
+    margin: 0;
+
+    & .button-circle-left,
+    & .button-circle-right {
+      opacity: 0;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+
+    &__slide {
+      padding: 60px 30px;
+      height: 300px;
+
+      & h1 {
+        font-size: 30px;
+      }
+
+      & h3 {
+        font-size: 18px;
+        margin: 10px 0 15px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .main_promo {
+    &__slide {
+    }
+  }
+}

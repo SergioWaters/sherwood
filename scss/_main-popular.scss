@@ -1,0 +1,54 @@
+.main_popular {
+  margin: 0 0 0 0;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 150px;
+    height: 150px;
+    background-color: $bgcoldark;
+    text-decoration: none;
+    color: $fcolprime;
+    transition: $transition;
+    padding: 10px;
+    border-radius: 50%;
+
+    &_icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 2;
+
+      & img {
+        transition: $transition;
+        background-color: $fcolside;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &_description {
+      @include font-inter-400;
+      font-size: 20px;
+      line-height: 22px;
+      flex: 1;
+      width: 150px;
+      text-align: center;
+    }
+
+    &:hover &_icon img {
+      transform: scale(125%);
+      transition: $transition;
+    }
+  }
+}
