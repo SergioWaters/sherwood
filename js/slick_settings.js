@@ -15,7 +15,7 @@ $(document).ready(function () {
     arrows: false,
     autoplay: false,
     autoplayspeed: 5000,
-    infinite: true,
+    infinite: false,
     pauseOnFocus: false,
     pauseOnHover: false,
   });
@@ -60,12 +60,12 @@ $(document).ready(function () {
     pauseOnHover: false,
   });
   //
-  $('.main_promo_slider').slick({
+  $('.main_photos_slider').slick({
     dots: true,
-    appendDots: $('.main_promo_slider__pagination'),
+    appendDots: $('.main_photos_slider__pagination'),
     arrows: true,
-    prevArrow: $('.main_promo .button-circle-left'),
-    nextArrow: $('.main_promo .button-circle-right'),
+    prevArrow: $('.main_photos .button-circle-left'),
+    nextArrow: $('.main_photos .button-circle-right'),
     autoplay: false,
     autoplayspeed: 5000,
     infinite: true,
@@ -83,15 +83,23 @@ $(document).ready(function () {
     ]
   });
   //
-  $('.main_sale__slider').slick({
+  $('.main_team__slider').slick({
     arrows: true,
-    prevArrow: $('.main_sale .button-circle-left'),
-    nextArrow: $('.main_sale .button-circle-right'),
+    prevArrow: $('.main_team .button-circle-left'),
+    nextArrow: $('.main_team .button-circle-right'),
+    autoplay: false,
+    autoplayspeed: 200000,
     infinite: false,
+    swipe: false,
+    draggable: false,
     pauseOnFocus: false,
     pauseOnHover: false,
-    slidesToShow: 4,
+    slidesToShow: 5,
     responsive: [
+      {
+        breakpoint: 1600,
+        settings: { slidesToShow: 4 }
+      },
       {
         breakpoint: 1300,
         settings: { slidesToShow: 3 }
@@ -121,47 +129,4 @@ $(document).ready(function () {
     swipe: false,
     touchMove: false
   });
-
-  $('.first.main_daily__item-slider').slick({
-    dots: false,
-    arrows: true,
-    prevArrow: $('.first.main_daily__item-slider_wrapper .arrow__left'),
-    nextArrow: $('.first.main_daily__item-slider_wrapper .arrow__right'),
-    autoplay: false,
-    autoplayspeed: 5000,
-    infinite: false,
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 770,
-        settings: {
-          arrows: false,
-          prevArrow: $(''),
-          nextArrow: $(''),
-        }
-      },
-    ]
-  });
-  $('.second.main_daily__item-slider').slick({
-    dots: false,
-    arrows: true,
-    prevArrow: $('.second.main_daily__item-slider_wrapper .arrow__left'),
-    nextArrow: $('.second.main_daily__item-slider_wrapper .arrow__right'),
-    autoplay: false,
-    autoplayspeed: 5000,
-    infinite: false,
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    responsive: [
-      {
-        breakpoint: 770,
-        settings: {
-          arrows: false,
-          prevArrow: $(''),
-          nextArrow: $(''),
-        }
-      },
-    ]
-  });
-});
+})

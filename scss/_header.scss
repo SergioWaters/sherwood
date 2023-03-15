@@ -1,4 +1,12 @@
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  background-color: $bgcollight;
+  opacity: 0.95;
+  z-index: 9999;
+
   & a {
     text-decoration: none;
     transition: $transition;
@@ -22,7 +30,6 @@
   }
 
   & .logo {
-    margin: 24px 0;
     width: 150px;
     height: 150px;
     background-image: url(../images/logo_small.png);
@@ -59,6 +66,10 @@
           &:hover {
             color: #30303080;
             transition: $transition;
+          }
+
+          &:first-child {
+            font-size: 24px;
           }
         }
 

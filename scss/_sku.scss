@@ -10,11 +10,17 @@
 
   &_description {
     background-color: $bgcoldark;
-    border-radius: 10px;
+    border-radius: 50px 0px 30px 0px;
     padding: 40px 20px 20px;
 
     & .title {
       margin-bottom: 20px;
+      color: $fcolfourth;
+      font-size: 40px;
+    }
+
+    & p {
+      font-size: 26px;
     }
   }
 
@@ -28,6 +34,17 @@
 
     & .card_icon {
       margin: 5px;
+      fill: #c9c9c9;
+      stroke: transparent;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      transition: $transition;
+
+      &:hover {
+        fill: #979797;
+        transition: $transition;
+      }
     }
   }
 

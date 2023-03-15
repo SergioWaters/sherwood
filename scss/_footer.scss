@@ -1,0 +1,11 @@
+.footer {
+  background-color: $bgcoldark;
+  margin-top: 100px;
+
+  &__inner {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

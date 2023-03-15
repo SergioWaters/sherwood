@@ -30,24 +30,21 @@
                 </button>
                 <ul class="nav_menu">
                   <li class="nav_menu-item">
-                    <a class="nav_menu-link" href="tel:+88007852535">
-                      8 800 785-25-35
+                    <a class="nav_menu-link" href="tel:+89995151363">
+                      8 999 515 13 63
                     </a>
                   </li>
                   <li class="nav_menu-item">
-                    <a class="nav_menu-link" href="#">О нас</a>
+                    <a class="nav_menu-link" href="#about">О нас</a>
                   </li>
                   <li class="nav_menu-item">
-                    <a class="nav_menu-link" href="#">Преимущества</a>
+                    <a class="nav_menu-link" href="#team">Наша Команда</a>
                   </li>
                   <li class="nav_menu-item">
-                    <a class="nav_menu-link" href="#">Наша Команда</a>
+                    <a class="nav_menu-link" href="#subjects">Предметы</a>
                   </li>
                   <li class="nav_menu-item">
-                    <a class="nav_menu-link" href="#">Предметы</a>
-                  </li>
-                  <li class="nav_menu-item">
-                    <a class="nav_menu-link" href="#">Цены и условия</a>
+                    <a class="nav_menu-link" href="#prices">Цены и условия</a>
                   </li>
                 </ul>
               </nav>
@@ -58,20 +55,12 @@
       <main class="main">
         <div class="container">
           <div class="main_inner">
-            <section class="main_about">
-              <h1>O нас</h1>
+            <section class="main_about" id="about">
               <div class="main_about__inner">
-                <img
-                  class="main_about__card"
-                  width="300"
-                  src="./images/card.png"
-                  alt="business card"
-                />
                 <div class="main_about__description">
-                  <p>
-                    Мы уютный клубный детский сад закрытого формата, выполнен в
-                    стиле Шервудского леса.
-                  </p>
+                  <h3>Шервуд</h3>
+                  <p>Уютный клубный детский сад закрытого формата,</p>
+                  <p>выполнен в стиле Шервудского леса.</p>
                   <p>
                     Создаем богатую развивающую среду, благотворно влияющую на
                     ребенка.
@@ -79,110 +68,65 @@
                 </div>
               </div>
             </section>
-            <section class="main_articles">
+            <section class="main_advantages" id="adv">
               <h1>Наши преимуществa</h1>
-              <div class="main_articles__inner">
-                <div class="main_articles__item">
-                  <img
-                    class="item__img"
-                    src="./images/logo_small.png"
-                    height="80"
-                    alt="Индивидуальный подход"
-                  />
-                  <span class="item__date">Индивидуальный подход</span>
-                  <p class="item__text">
-                    каждый ребёнок- это уникальная личность, которая развивается
-                    в своем ритме
-                  </p>
+              <div class="main_advantages__inner">
+                <div class="main_advantages__item indiv">
+                  <div class="item__textblock">
+                    <h3 class="item__title">Индивидуальный&nbsp;подход</h3>
+                    <p class="item__text">
+                      каждый ребёнок- это уникальная личность, которая
+                      развивается в своем ритме
+                    </p>
+                  </div>
                 </div>
-                <div class="main_articles__item">
-                  <img
-                    class="item__img"
-                    src="./images/logo_small.png"
-                    height="80"
-                    alt="Пятиразовое питание"
-                  />
-                  <span class="item__date">Пятиразовое питание</span>
-                  <p class="item__text">готовим с любовью. Вкусно и полезно</p>
+                <div class="main_advantages__item food">
+                  <div class="item__textblock">
+                    <h3 class="item__title">Пятиразовое&nbsp;питание</h3>
+                    <p class="item__text">
+                      готовим с любовью. Вкусно и полезно
+                    </p>
+                  </div>
                 </div>
-                <div class="main_articles__item">
-                  <img
-                    class="item__img"
-                    src="./images/logo_small.png"
-                    height="80"
-                    alt="Лояльность посещений"
-                  />
-                  <span class="item__date">Лояльность посещений</span>
-                  <p class="item__text">
-                    возможность почасовое пребывание, на определенное количество
-                    дней в месяц
-                  </p>
+                <div class="main_advantages__item loyal">
+                  <div class="item__textblock">
+                    <h3 class="item__title">Лояльность&nbsp;посещений</h3>
+                    <p class="item__text">
+                      возможность почасовое пребывание, на определенное
+                      количество дней в месяц
+                    </p>
+                  </div>
                 </div>
-                <div class="main_articles__item">
-                  <img
-                    class="item__img"
-                    src="./images/logo_small.png"
-                    height="80"
-                    alt="Стоимость"
-                  />
-                  <span class="item__date">Стоимость</span>
-                  <p class="item__text">
-                    без вступительных взносов, семейная скидка
-                  </p>
+                <div class="main_advantages__item price">
+                  <div class="item__textblock">
+                    <h3 class="item__title">Стоимость</h3>
+                    <p class="item__text">
+                      без вступительных взносов, семейная скидка
+                    </p>
+                  </div>
                 </div>
-                <div class="main_articles__item">
-                  <img
-                    class="item__img"
-                    src="./images/logo_small.png"
-                    height="80"
-                    alt="Профессионализм"
-                  />
-                  <span class="item__date">Профессионализм</span>
-                  <p class="item__text">фантастический опыт работы с детками</p>
+                <div class="main_advantages__item proff">
+                  <div class="item__textblock">
+                    <h3 class="item__title">Профессионализм</h3>
+                    <p class="item__text">
+                      фантастический опыт работы с детками
+                    </p>
+                  </div>
                 </div>
               </div>
             </section>
-            <section class="main_sale">
+            <section class="main_team" id="team">
               <h1>Hаша команда</h1>
-              <div class="main_sale__inner">
-                <div class="main_sale__nav">
-                  <div class="main_sale__slider_buttons">
-                    <button class="button-circle-left">
-                      <span class="button-circle-left__arrow"></span>
-                    </button>
-                    <button class="button-circle-right">
-                      <span class="button-circle-right__arrow"></span>
-                    </button>
-                  </div>
-                </div>
-                <div class="main_sale__slider">
-                  <div class="main_sale__slider-slide">
+              <div class="main_team__inner">
+                <div class="main_team__slider">
+                  <div class="main_team__slider-slide">
                     <div class="card">
-                      <div class="card_icons"></div>
-                      <div class="card_promos"></div>
                       <div class="card_slider_wrapper">
                         <div class="ring1 card_slider">
                           <div>
                             <img
-                              src="./images/logo_small.png"
+                              src="./images/team/svetlana.jpg"
                               alt="Светлана"
-                              width="200"
-                              height="200"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="./images/logo_small.png"
-                              alt="Светлана"
-                              width="200"
-                              height="200"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="./images/logo_small.png"
-                              alt="Светлана"
-                              width="200"
                               height="200"
                             />
                           </div>
@@ -201,17 +145,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="main_sale__slider-slide">
+                  <div class="main_team__slider-slide">
                     <div class="card">
-                      <div class="card_icons"></div>
-                      <div class="card_promos"></div>
                       <div class="card_slider_wrapper">
                         <div class="ring2 card_slider">
                           <div>
                             <img
-                              src="./images/logo_small.png"
+                              src="./images/team/olga.jpg"
                               alt="Ольга"
-                              width="200"
                               height="200"
                             />
                           </div>
@@ -219,15 +160,6 @@
                             <img
                               src="./images/logo_small.png"
                               alt="Ольга"
-                              width="200"
-                              height="200"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="./images/logo_small.png"
-                              alt="Ольга"
-                              width="200"
                               height="200"
                             />
                           </div>
@@ -246,17 +178,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="main_sale__slider-slide">
+                  <div class="main_team__slider-slide">
                     <div class="card">
-                      <div class="card_icons"></div>
-                      <div class="card_promos"></div>
                       <div class="card_slider_wrapper">
                         <div class="ring3 card_slider">
                           <div>
                             <img
-                              src="./images/logo_small.png"
+                              src="./images/team/nataliya.jpg"
                               alt="Наталья"
-                              width="200"
                               height="200"
                             />
                           </div>
@@ -264,15 +193,6 @@
                             <img
                               src="./images/logo_small.png"
                               alt="Наталья"
-                              width="200"
-                              height="200"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="./images/logo_small.png"
-                              alt="Наталья"
-                              width="200"
                               height="200"
                             />
                           </div>
@@ -293,17 +213,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="main_sale__slider-slide">
+                  <div class="main_team__slider-slide">
                     <div class="card">
-                      <div class="card_icons"></div>
-                      <div class="card_promos"></div>
                       <div class="card_slider_wrapper">
                         <div class="ring4 card_slider">
                           <div>
                             <img
-                              src="./images/logo_small.png"
+                              src="./images/team/karina.jpg"
                               alt="Карина"
-                              width="200"
                               height="200"
                             />
                           </div>
@@ -311,15 +228,6 @@
                             <img
                               src="./images/logo_small.png"
                               alt="Карина"
-                              width="200"
-                              height="200"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="./images/logo_small.png"
-                              alt="Карина"
-                              width="200"
                               height="200"
                             />
                           </div>
@@ -340,17 +248,14 @@
                       </div>
                     </div>
                   </div>
-                  <div class="main_sale__slider-slide">
+                  <div class="main_team__slider-slide">
                     <div class="card">
-                      <div class="card_icons"></div>
-                      <div class="card_promos"></div>
                       <div class="card_slider_wrapper">
                         <div class="ring5 card_slider">
                           <div>
                             <img
-                              src="./images/logo_small.png"
+                              src="./images/team/madina.jpg"
                               alt="Мадина"
-                              width="200"
                               height="200"
                             />
                           </div>
@@ -358,15 +263,6 @@
                             <img
                               src="./images/logo_small.png"
                               alt="Мадина"
-                              width="200"
-                              height="200"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="./images/logo_small.png"
-                              alt="Мадина"
-                              width="200"
                               height="200"
                             />
                           </div>
@@ -388,107 +284,252 @@
                     </div>
                   </div>
                 </div>
+                <div class="main_team__nav">
+                  <div class="main_team__slider_buttons">
+                    <button class="button-circle-left">
+                      <span class="button-circle-left__arrow"></span>
+                    </button>
+                    <button class="button-circle-right">
+                      <span class="button-circle-right__arrow"></span>
+                    </button>
+                  </div>
+                </div>
               </div>
             </section>
-            <section class="main_promo">
+            <section class="main_photos" id="photos">
               <h1>Фотоальбом</h1>
-              <div class="main_promo__inner">
+              <div class="main_photos__inner">
                 <button class="button-circle-left">
                   <span class="button-circle-left__arrow"></span>
                 </button>
                 <button class="button-circle-right">
                   <span class="button-circle-right__arrow"></span>
                 </button>
-                <div class="main_promo_slider__pagination"></div>
+                <div class="main_photos_slider__pagination"></div>
 
-                <div class="main_promo_slider">
+                <div class="main_photos_slider">
                   <div>
-                    <div class="main_promo__slide">
+                    <div class="main_photos__slide">
                       <h1>fotki detei</h1>
                     </div>
                   </div>
                   <div>
-                    <div class="main_promo__slide">
+                    <div class="main_photos__slide">
                       <h1>Eshe fotki</h1>
                     </div>
                   </div>
                 </div>
               </div>
             </section>
-            <section class="main_popular">
+            <section class="main_subjects" id="subjects">
               <h1>Предметы</h1>
-              <div class="main_popular__inner">
-                <div class="main_popular__item">
-                  <div class="main_popular__item_icon">
+              <div class="main_subjects__inner">
+                <div class="main_subjects__item">
+                  <div class="main_subjects__item_icon">
                     <img src="./images/logo_small.png" alt="Окружающий мир" />
                   </div>
-                  <p class="main_popular__item_description">Окружающий мир</p>
+                  <p class="main_subjects__item_description">Окружающий мир</p>
                 </div>
-                <div class="main_popular__item">
-                  <div class="main_popular__item_icon">
+                <div class="main_subjects__item">
+                  <div class="main_subjects__item_icon">
                     <img src="./images/logo_small.png" alt="Логоритмика" />
                   </div>
-                  <p class="main_popular__item_description">Логоритмика</p>
+                  <p class="main_subjects__item_description">Логоритмика</p>
                 </div>
-                <div class="main_popular__item">
-                  <div class="main_popular__item_icon">
+                <div class="main_subjects__item">
+                  <div class="main_subjects__item_icon">
                     <img src="./images/logo_small.png" alt="Лепка" />
                   </div>
-                  <p class="main_popular__item_description">Лепка</p>
+                  <p class="main_subjects__item_description">Лепка</p>
                 </div>
-                <div class="main_popular__item">
-                  <div class="main_popular__item_icon">
+                <div class="main_subjects__item">
+                  <div class="main_subjects__item_icon">
                     <img src="./images/logo_small.png" alt="Рисование" />
                   </div>
-                  <p class="main_popular__item_description">Рисование</p>
+                  <p class="main_subjects__item_description">Рисование</p>
                 </div>
-                <div class="main_popular__item">
-                  <div class="main_popular__item_icon">
+                <div class="main_subjects__item">
+                  <div class="main_subjects__item_icon">
                     <img src="./images/logo_small.png" alt="Искусствоведение" />
                   </div>
-                  <p class="main_popular__item_description">Искусствоведение</p>
+                  <p class="main_subjects__item_description">
+                    Искусствоведение
+                  </p>
                 </div>
-                <div class="main_popular__item">
-                  <div class="main_popular__item_icon">
+                <div class="main_subjects__item">
+                  <div class="main_subjects__item_icon">
                     <img src="./images/logo_small.png" alt="Письмо" />
                   </div>
-                  <p class="main_popular__item_description">Письмо</p>
+                  <p class="main_subjects__item_description">Письмо</p>
                 </div>
-                <div class="main_popular__item">
-                  <div class="main_popular__item_icon">
+                <div class="main_subjects__item">
+                  <div class="main_subjects__item_icon">
                     <img src="./images/logo_small.png" alt="Развитие речи" />
                   </div>
-                  <p class="main_popular__item_description">Развитие речи</p>
+                  <p class="main_subjects__item_description">Развитие речи</p>
                 </div>
-                <div class="main_popular__item">
-                  <div class="main_popular__item_icon">
+                <div class="main_subjects__item">
+                  <div class="main_subjects__item_icon">
                     <img src="./images/logo_small.png" alt="Математика" />
                   </div>
-                  <p class="main_popular__item_description">Математика</p>
+                  <p class="main_subjects__item_description">Математика</p>
                 </div>
-                <div class="main_popular__item">
-                  <div class="main_popular__item_icon">
+                <div class="main_subjects__item">
+                  <div class="main_subjects__item_icon">
                     <img src="./images/logo_small.png" alt="Сказкотерапия" />
                   </div>
-                  <p class="main_popular__item_description">Сказкотерапия</p>
+                  <p class="main_subjects__item_description">Сказкотерапия</p>
                 </div>
-                <div class="main_popular__item">
-                  <div class="main_popular__item_icon">
+                <div class="main_subjects__item">
+                  <div class="main_subjects__item_icon">
                     <img src="./images/logo_small.png" alt="Английский язык" />
                   </div>
-                  <p class="main_popular__item_description">Английский язык</p>
+                  <p class="main_subjects__item_description">Английский язык</p>
                 </div>
-                <div class="main_popular__item">
-                  <div class="main_popular__item_icon">
+                <div class="main_subjects__item">
+                  <div class="main_subjects__item_icon">
                     <img src="./images/logo_small.png" alt="Ритмопластика" />
                   </div>
-                  <p class="main_popular__item_description">Ритмопластика</p>
+                  <p class="main_subjects__item_description">Ритмопластика</p>
+                </div>
+              </div>
+            </section>
+            <section class="main_subjects" id="subjects">
+              <h1>Предметы</h1>
+              <ul class="main_subjects__inner_list">
+                <li class="item">
+                  <p class="main_subjects__item_description">Окружающий мир</p>
+                </li>
+                <li class="item">
+                  <p class="main_subjects__item_description">Логоритмика</p>
+                </li>
+                <li class="item">
+                  <p class="main_subjects__item_description">Лепка</p>
+                </li>
+                <li class="item">
+                  <p class="main_subjects__item_description">Рисование</p>
+                </li>
+                <li class="item">
+                  <p class="main_subjects__item_description">
+                    Искусствоведение
+                  </p>
+                </li>
+                <li class="item">
+                  <p class="main_subjects__item_description">Письмо</p>
+                </li>
+                <li class="item">
+                  <p class="main_subjects__item_description">Развитие речи</p>
+                </li>
+                <li class="item">
+                  <p class="main_subjects__item_description">Математика</p>
+                </li>
+                <li class="item">
+                  <p class="main_subjects__item_description">Сказкотерапия</p>
+                </li>
+                <li class="item">
+                  <p class="main_subjects__item_description">Английский язык</p>
+                </li>
+                <li class="item">
+                  <p class="main_subjects__item_description">Ритмопластика</p>
+                </li>
+              </ul>
+            </section>
+            <section class="main_prices" id="prices">
+              <h1>цены</h1>
+              <div class="main_prices__heading">
+                <h4><span>БЕЗ</span> вступительных взносов!</h4>
+                <h4>Абонемент «лояльный» - индивидуальные условия</h4>
+                <h4>Скидка «семейная»</h4>
+              </div>
+              <div class="main_prices__inner">
+                <div class="main_prices__item fullday">
+                  <h3 class="item__title">
+                    Полный день
+                    <span>08:00 - 19:00</span>
+                  </h3>
+                  <ul class="list">
+                    <li class="list__item">
+                      25.000&#x20BD; в месяц
+                      <span> 5 дней в неделю</span>
+                    </li>
+                    <li class="list__item">
+                      20.000&#x20BD; в месяц
+                      <span>4 дня в неделю</span>
+                    </li>
+                    <li class="list__item">
+                      15.000&#x20BD; в месяц
+                      <span>3 дня в неделю</span>
+                    </li>
+                    <li class="list__item">
+                      10.000&#x20BD; в месяц
+                      <span>2 дня в неделю</span>
+                    </li>
+                    <li class="list__item">
+                      1.500&#x20BD;
+                      <span>разовое посещение</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="main_prices__item halfday">
+                  <h3 class="item__title">
+                    Неполный&nbsp;день
+                    <span>08:00 - 13:30</span>
+                  </h3>
+                  <ul class="list">
+                    <li class="list__item">
+                      18.000&#x20BD; в месяц
+                      <span>5 дней в неделю</span>
+                    </li>
+                    <li class="list__item">
+                      14.400&#x20BD; в месяц
+                      <span>4 дня в неделю</span>
+                    </li>
+                    <li class="list__item">
+                      10.800&#x20BD; в месяц
+                      <span>3 дня в неделю</span>
+                    </li>
+                    <li class="list__item">
+                      7.200&#x20BD; в месяц
+                      <span>2 дня в неделю</span>
+                    </li>
+                    <li class="list__item">
+                      1.100&#x20BD;
+                      <span>разовое посещение</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="main_criteria">
+              <h1>Условия приема</h1>
+              <div class="main_criteria__inner">
+                <div class="criteria__item">
+                  <span>1</span>
+                  Позвонить нам
+                </div>
+                <div class="criteria__item">
+                  <span>2</span>
+                  Прийти на экскурсию
+                </div>
+                <div class="criteria__item">
+                  <span>3</span>
+                  Собрать документы: справка от педиатра и анализы (энтеробиоз и
+                  яйца глист)
+                </div>
+                <div class="criteria__item">
+                  <span>4</span>
+                  Прийти на бесплатный пробный день
                 </div>
               </div>
             </section>
           </div>
         </div>
       </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">footer</div>
+        </div>
+      </footer>
     </div>
     <script src="./js/jquery.js"></script>
     <script src="./js/slick.min.js"></script>

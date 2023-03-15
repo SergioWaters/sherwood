@@ -195,20 +195,6 @@
   }
 }
 
-.card_icon {
-  fill: #c9c9c9;
-  stroke: transparent;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  transition: $transition;
-
-  &:hover {
-    fill: #979797;
-    transition: $transition;
-  }
-}
-
 .heart-checked {
   fill: #e24b33;
   transition: $transition;

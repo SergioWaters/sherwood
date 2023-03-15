@@ -1,0 +1,62 @@
+.main_advantages {
+  background-color: $bgcoldark;
+  padding: 0 0 100px 0;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+  }
+
+  &__item {
+    gap: 15px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: $transition;
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+
+    &.indiv {
+      background-image: url("../images/adv-item1.png");
+    }
+    &.food {
+      background-image: url("../images/adv-item2.png");
+    }
+    &.loyal {
+      background-image: url("../images/adv-item3.png");
+    }
+    &.price {
+      background-image: url("../images/adv-item4.png");
+    }
+    &.proff {
+      background-image: url("../images/adv-item5.png");
+    }
+    &:hover {
+      box-shadow: 0 16px 32px #0000001a;
+      transition: $transition;
+    }
+    & .item__textblock {
+      margin-top: 140px;
+      text-align: center;
+    }
+    & .item__title {
+      @include font-inter-600;
+      font-size: 36px;
+      line-height: 40px;
+      color: $fcolfourth;
+      margin-bottom: 20px;
+    }
+
+    & .item__text {
+      @include font-inter-400;
+      font-size: 26px;
+      color: $fcolthird;
+    }
+  }
+}

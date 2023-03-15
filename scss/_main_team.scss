@@ -1,7 +1,6 @@
-.main_sale {
+.main_team {
   & h1 {
     @include font-prata-400;
-    // margin: 0;
     font-size: 40px;
     line-height: 40px;
   }
@@ -50,12 +49,18 @@
       margin: 0 auto;
     }
 
-    .slick-list {
+    & .slick-list {
       overflow: hidden;
     }
 
     .slick-track {
       display: flex;
+    }
+
+    .card_slider {
+      & .slick-list {
+        border-radius: 50%;
+      }
     }
   }
 }

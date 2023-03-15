@@ -1,0 +1,76 @@
+.main_prices {
+  font-size: 26px;
+  line-height: 30px;
+
+  &__heading {
+    margin: 0 0 0 20px;
+    display: flex;
+    flex-direction: column;
+
+    & span {
+      color: $fcolfourth;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 50px 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @include font-prata-400;
+    width: 300px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+
+    &.halfday {
+      background-image: url("../images/halfday_bg.png");
+      .item__title {
+      }
+    }
+    &.fullday {
+      background-image: url("../images/fullday_bg.png");
+      .item__title {
+      }
+    }
+    & .item__title {
+      font-size: 36px;
+      display: flex;
+      flex-direction: column;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px 10px 150px 100px;
+
+      & span {
+        font-size: 30px;
+      }
+    }
+    & .list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 30px;
+
+        & span {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

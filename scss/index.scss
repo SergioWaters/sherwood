@@ -6,11 +6,13 @@
 @import "./sku";
 @import "./header";
 @import "./main_about";
-@import "./main-promo";
-@import "./main-popular";
-@import "./main-sale";
-@import "./main-daily";
-@import "./main_articles";
+@import "./main_photos";
+@import "./main_subjects";
+@import "./main_team";
+@import "./main_advantages";
+@import "./main_prices";
+@import "./main_criteria";
+@import "./footer";
 
 *,
 *::after,
@@ -39,27 +41,39 @@ body {
   max-width: 1300px;
 
   @media (max-width: 1320px) {
-    max-width: 90%;
+    max-width: 95%;
   }
 }
 
-.main section {
-  margin: 0 0 100px 0;
+.main {
+  padding: 0 0 0 0;
 
-  & h1 {
-    @include font-prata-400;
-    font-size: 40px;
-    line-height: 40px;
-    margin: 40px 0 40px 20px;
-    color: $fcolprime;
-    text-transform: uppercase;
+  section {
+    padding: 50px 0 50px 0;
+
+    & h1 {
+      @include font-prata-400;
+      font-size: 40px;
+      line-height: 40px;
+      margin: 40px 0 40px 20px;
+      color: $fcolthird;
+      text-transform: uppercase;
+
+      @media (max-width: 400px) {
+        margin: 40px 0 40px 0;
+        font-size: 30px;
+        line-height: 30px;
+      }
+    }
+
+    @media (max-width: 770px) {
+      padding: 60px 0 0 0;
+    }
   }
-
-  @media (max-width: 1300px) {
-    padding: 0 10px;
-  }
-
   @media (max-width: 770px) {
-    margin: 60px 0 0 0;
+    padding: 60px 0 0 0;
+  }
+  section:first-child {
+    padding: 0;
   }
 }
