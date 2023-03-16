@@ -98,11 +98,11 @@ $(document).ready(function () {
     responsive: [
       {
         breakpoint: 1600,
-        settings: { slidesToShow: 4 }
+        settings: { slidesToShow: 3 }
       },
       {
         breakpoint: 1300,
-        settings: { slidesToShow: 3 }
+        settings: { slidesToShow: 2 }
       },
       {
         breakpoint: 950,
