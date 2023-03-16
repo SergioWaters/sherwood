@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: flex-start;
     background-color: $bgcoldark;
-    border-radius: 10px;
+    border-radius: 0 40px;
 
     & h1 {
       @include font-prata-400;

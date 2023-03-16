@@ -4,7 +4,7 @@
   width: 100%;
   left: 0;
   background-color: $bgcollight;
-  opacity: 0.95;
+  opacity: 0.9;
   z-index: 9999;
 
   & a {
@@ -51,9 +51,12 @@
 
       &_menu {
         display: flex;
-        min-width: 200px;
+        min-width: 220px;
         gap: 20px;
 
+        &-item:first-child {
+          font-size: 30px;
+        }
         &-link {
           display: block;
           box-sizing: border-box;
@@ -66,10 +69,6 @@
           &:hover {
             color: #30303080;
             transition: $transition;
-          }
-
-          &:first-child {
-            font-size: 24px;
           }
         }
 
@@ -118,7 +117,7 @@
           animation: growDown 300ms ease-in-out forwards;
           transform-origin: top center;
           box-shadow: 0 8px 20px 0 #0000001a;
-          border-radius: 15px;
+          border-radius: 15px 0 15px 0;
 
           &.open {
             display: flex;

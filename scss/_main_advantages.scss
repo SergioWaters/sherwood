@@ -1,13 +1,14 @@
 .main_advantages {
   background-color: $bgcoldark;
   padding: 0 0 100px 0;
+  border-radius: 0 30% 0 30%;
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 50px;
     max-width: 1200px;
   }
 

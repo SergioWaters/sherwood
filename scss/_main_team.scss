@@ -8,13 +8,17 @@
   &__inner {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   &__nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     align-items: flex-end;
     margin: 10px 0 26px 0;
+    position: absolute;
+    top: -60px;
+    right: 0;
   }
 
   &__categories {

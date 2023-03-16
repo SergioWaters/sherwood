@@ -25,7 +25,7 @@ $(document).ready(function () {
     arrows: false,
     autoplay: false,
     autoplayspeed: 5000,
-    infinite: true,
+    infinite: false,
     pauseOnFocus: false,
     pauseOnHover: false,
   });
@@ -35,7 +35,7 @@ $(document).ready(function () {
     arrows: false,
     autoplay: false,
     autoplayspeed: 5000,
-    infinite: true,
+    infinite: false,
     pauseOnFocus: false,
     pauseOnHover: false,
   });
@@ -45,7 +45,7 @@ $(document).ready(function () {
     arrows: false,
     autoplay: false,
     autoplayspeed: 5000,
-    infinite: true,
+    infinite: false,
     pauseOnFocus: false,
     pauseOnHover: false,
   });
@@ -55,7 +55,7 @@ $(document).ready(function () {
     arrows: false,
     autoplay: false,
     autoplayspeed: 5000,
-    infinite: true,
+    infinite: false,
     pauseOnFocus: false,
     pauseOnHover: false,
   });
