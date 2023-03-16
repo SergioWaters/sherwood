@@ -13,12 +13,13 @@
 
   &__nav {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: flex-end;
     margin: 10px 0 26px 0;
     position: absolute;
-    top: -60px;
+    top: 45%;
     right: 0;
+    width: 100%;
   }
 
   &__categories {
@@ -36,19 +37,6 @@
     align-items: flex-start;
     min-width: 0;
 
-    &_buttons {
-      display: flex;
-      justify-content: end;
-
-      & .button-circle-left {
-        margin-right: 8px;
-      }
-
-      .slick-arrow.slick-disabled {
-        opacity: 0.2;
-      }
-    }
-
     &-slide {
       margin: 0 auto;
     }
@@ -64,6 +52,20 @@
     .card_slider {
       & .slick-list {
         border-radius: 50%;
+      }
+    }
+
+    &_buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      & .button-circle-left {
+        margin-right: 8px;
+      }
+
+      .slick-arrow.slick-disabled {
+        opacity: 0.2;
       }
     }
   }
