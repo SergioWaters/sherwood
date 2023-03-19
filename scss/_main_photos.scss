@@ -14,18 +14,20 @@
     display: flex;
     justify-content: center;
     position: relative;
+    background-color: $bgcoldark;
+    overflow: hidden;
+    padding: 20px 0;
   }
 
   &__slide {
-    height: 500px;
-    width: 100%;
-    padding: 120px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    background-color: $bgcoldark;
-    border-radius: 0 40px;
+
+    & img {
+      display: block;
+      max-height: 600px;
+      object-fit: contain;
+    }
 
     & h1 {
       @include font-prata-400;
@@ -44,13 +46,13 @@
 
   & .button-circle-left {
     position: absolute;
-    top: 223px;
+    top: 50%;
     left: 24px;
   }
 
   & .button-circle-right {
     position: absolute;
-    top: 223px;
+    top: 50%;
     right: 24px;
   }
 
@@ -116,8 +118,9 @@
     }
 
     &__slide {
-      padding: 60px 30px;
-      height: 300px;
+      & img {
+        max-height: 300px;
+      }
 
       & h1 {
         font-size: 30px;
@@ -126,6 +129,16 @@
       & h3 {
         font-size: 18px;
         margin: 10px 0 15px 0;
+      }
+    }
+  }
+}
+@media (max-width: 770px) {
+  .main_photos {
+    &__slide {
+      & img {
+        max-height: auto;
+        width: 95%;
       }
     }
   }

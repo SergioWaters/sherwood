@@ -42,3 +42,12 @@ function burgerClickHandler() {
   burger.querySelector(".bars").classList.toggle('open');
   nav.classList.toggle('open');
 }
+
+const sliderEl = document.querySelector('.main_photos_slider');
+for(let i = 1; i < 12; i++){
+  sliderEl.insertAdjacentHTML('beforeend', `<div>
+                                              <div class="main_photos__slide">
+                                                <img src="./images/slider/shrwd${i}.jpg" alt="${i}" height="850">
+                                              </div>
+                                            </div>`)
+}

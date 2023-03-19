@@ -66,9 +66,9 @@ $(document).ready(function () {
     arrows: true,
     prevArrow: $('.main_photos .button-circle-left'),
     nextArrow: $('.main_photos .button-circle-right'),
-    autoplay: false,
+    autoplay: true,
     autoplayspeed: 5000,
-    infinite: true,
+    // infinite: true,
     pauseOnFocus: false,
     pauseOnHover: false,
     responsive: [
