@@ -1489,8 +1489,6 @@ template {
           justify-content: center;
   position: relative;
   background-color: #c9e165;
-  overflow: hidden;
-  padding: 20px 0;
 }
 .main_photos__slide {
   display: -webkit-box;
@@ -1505,6 +1503,9 @@ template {
   max-height: 600px;
   -o-object-fit: contain;
      object-fit: contain;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(48, 48, 48, 0.5019607843);
+          box-shadow: 0px 0px 15px 0px rgba(48, 48, 48, 0.5019607843);
+  border-radius: 5px;
 }
 .main_photos__slide h1 {
   font-family: "Adigiana extreme", serif;
@@ -1579,6 +1580,7 @@ template {
 }
 .main_photos_slider .slick-list {
   overflow: hidden;
+  padding: 20px 0;
 }
 .main_photos_slider .slick-track {
   display: -webkit-box;

@@ -15,8 +15,6 @@
     justify-content: center;
     position: relative;
     background-color: $bgcoldark;
-    overflow: hidden;
-    padding: 20px 0;
   }
 
   &__slide {
@@ -27,6 +25,8 @@
       display: block;
       max-height: 600px;
       object-fit: contain;
+      box-shadow: 0px 0px 15px 0px #30303080;
+      border-radius: 5px;
     }
 
     & h1 {
@@ -98,6 +98,7 @@
 
     & .slick-list {
       overflow: hidden;
+      padding: 20px 0;
     }
 
     & .slick-track {
