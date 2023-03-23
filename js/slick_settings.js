@@ -94,7 +94,7 @@ $(document).ready(function () {
     draggable: false,
     pauseOnFocus: false,
     pauseOnHover: false,
-    slidesToShow: 5,
+    slidesToShow: 4,
     responsive: [
       {
         breakpoint: 1600,
