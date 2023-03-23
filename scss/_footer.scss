@@ -1,11 +1,53 @@
 .footer {
   background-color: $bgcoldark;
-  margin-top: 100px;
 
   &__inner {
-    min-height: 300px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px 0;
+  }
+
+  &__part {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+    min-width: 170px;
+  }
+
+  & .nav_menu {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 700px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .phone {
+    font-size: 30px;
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  & .social__link {
+    display: block;
+    text-decoration: none;
+  }
+
+  & .social__icon {
+    width: 40px;
+    height: 40px;
   }
 }

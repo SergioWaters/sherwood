@@ -5,8 +5,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 50px;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    padding: 50px 0;
   }
 
   &__description {
@@ -15,13 +21,7 @@
     flex-direction: column;
     gap: 20px;
     flex: 2;
-    height: 800px;
-    width: 500px;
     text-align: center;
-    background-image: url("../images/bg.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 
     & h3 {
       @include font-prata-400;
@@ -43,5 +43,15 @@
     @media (max-width: 800px) {
       height: 600px;
     }
+  }
+  & .location__textblock {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    font-size: 30px;
+    line-height: 35px;
+    gap: 20px;
+    @include font-prata-400;
   }
 }

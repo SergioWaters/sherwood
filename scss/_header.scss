@@ -31,11 +31,16 @@
 
   & .logo {
     width: 150px;
-    height: 150px;
-    background-image: url(../images/logo_small.png);
+    height: 125px;
+    background-image: url(../images/logo_small.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  & .phone {
+    color: $fcolthird;
+    font-size: 35px;
   }
 
   & .navigation {
@@ -43,47 +48,10 @@
     align-items: center;
     height: 62px;
     background-color: transparent;
-
-    & .nav {
-      & .burgerbtn {
-        display: none;
-      }
-
-      &_menu {
-        display: flex;
-        min-width: 220px;
-        gap: 20px;
-
-        &-item:first-child {
-          font-size: 30px;
-        }
-        &-link {
-          display: block;
-          box-sizing: border-box;
-          text-transform: uppercase;
-          color: $fcolprime;
-          border: none;
-          background-color: transparent;
-          transition: $transition;
-
-          &:hover {
-            color: #30303080;
-            transition: $transition;
-          }
-        }
-
-        &-item {
-          display: flex;
-          padding: 5px;
-          align-items: flex-end;
-          list-style-type: none;
-        }
-      }
-    }
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .header {
     &_part {
       flex-direction: column-reverse;
@@ -93,6 +61,11 @@
       & .dropdown {
         margin: 0px 15px;
       }
+    }
+
+    & .logo {
+      width: 100px;
+      height: 100px;
     }
 
     & .navigation {
@@ -136,14 +109,12 @@
   .header {
     & .dropdown,
     & .phone {
-      display: none;
+      font-size: 24px;
     }
 
     & .logo {
-      margin: 5px;
-      padding: 10px;
-      width: 100px;
-      height: 100px;
+      width: 40px;
+      height: 40px;
     }
 
     & .navigation {

@@ -12,7 +12,9 @@
 @import "./main_advantages";
 @import "./main_prices";
 @import "./main_criteria";
+@import "./main_location";
 @import "./footer";
+@import "./nav";
 
 *,
 *::after,
@@ -69,5 +71,42 @@ body {
 
   section:first-child {
     padding: 0;
+  }
+}
+
+.nav {
+  & .burgerbtn {
+    display: none;
+  }
+
+  &_menu {
+    display: flex;
+    min-width: 220px;
+    gap: 20px;
+
+    &-item:first-child {
+      font-size: 30px;
+    }
+    &-link {
+      display: block;
+      box-sizing: border-box;
+      text-transform: uppercase;
+      color: $fcolprime;
+      border: none;
+      background-color: transparent;
+      transition: $transition;
+
+      &:hover {
+        color: #30303080;
+        transition: $transition;
+      }
+    }
+
+    &-item {
+      display: flex;
+      padding: 5px;
+      align-items: flex-end;
+      list-style-type: none;
+    }
   }
 }

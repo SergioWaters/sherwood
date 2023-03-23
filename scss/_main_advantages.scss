@@ -1,7 +1,7 @@
 .main_advantages {
   background-color: $bgcoldark;
   padding: 0 0 100px 0;
-  border-radius: 0 30% 0 30%;
+  border-radius: 0 10% 0 30%;
 
   &__inner {
     display: flex;
@@ -24,19 +24,19 @@
     background-repeat: no-repeat;
 
     &.indiv {
-      background-image: url("../images/adv-item1.png");
+      background-image: url("../images/adv-item1.jpg");
     }
     &.food {
-      background-image: url("../images/adv-item2.png");
+      background-image: url("../images/adv-item2.jpg");
     }
     &.loyal {
-      background-image: url("../images/adv-item3.png");
+      background-image: url("../images/adv-item3.jpg");
     }
     &.price {
-      background-image: url("../images/adv-item4.png");
+      background-image: url("../images/adv-item4.jpg");
     }
     &.proff {
-      background-image: url("../images/adv-item5.png");
+      background-image: url("../images/adv-item5.jpg");
     }
     &:hover {
       box-shadow: 0 16px 32px #0000001a;

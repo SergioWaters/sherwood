@@ -1,0 +1,27 @@
+.main {
+  &_location {
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 30px;
+    }
+    &__map {
+      flex: 3;
+      border-radius: 30px 0;
+      box-shadow: 0px 3px 25px 0px $fcolprime;
+      min-height: 400px;
+    }
+  }
+  & .location__textblock {
+    list-style: none;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    line-height: 35px;
+    gap: 20px;
+    @include font-prata-400;
+  }
+}

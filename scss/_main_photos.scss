@@ -15,6 +15,7 @@
     justify-content: center;
     position: relative;
     background-color: $bgcoldark;
+    min-height: 200px;
   }
 
   &__slide {
@@ -107,20 +108,20 @@
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 970px) {
   .main_photos {
     margin: 0;
 
     & .button-circle-left,
     & .button-circle-right {
-      opacity: 0;
+      display: none;
       cursor: not-allowed;
       pointer-events: none;
     }
 
     &__slide {
       & img {
-        max-height: 300px;
+        height: 300px;
       }
 
       & h1 {
@@ -138,8 +139,16 @@
   .main_photos {
     &__slide {
       & img {
-        max-height: auto;
-        width: 95%;
+        // height: auto;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .main_photos {
+    &__slide {
+      & img {
+        height: 180px;
       }
     }
   }
