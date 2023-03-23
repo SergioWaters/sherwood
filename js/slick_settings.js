@@ -94,7 +94,7 @@ $(document).ready(function () {
     draggable: false,
     pauseOnFocus: false,
     pauseOnHover: false,
-    slidesToShow: 5,
+    slidesToShow: 3,
     responsive: [
       {
         breakpoint: 1600,
@@ -106,7 +106,7 @@ $(document).ready(function () {
       },
       {
         breakpoint: 950,
-        settings: { slidesToShow: 2 }
+        settings: { slidesToShow: 1 }
       },
       {
         breakpoint: 770,
