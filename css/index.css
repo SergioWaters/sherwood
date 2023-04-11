@@ -2173,9 +2173,6 @@ template {
   min-width: 220px;
   gap: 20px;
 }
-.nav_menu-item:first-child {
-  font-size: 30px;
-}
 .nav_menu-link {
   text-decoration: none;
   display: block;
