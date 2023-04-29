@@ -48,3 +48,15 @@ function burgerClickHandler() {
  * then add attr src to images
  * then get full resolution images
  */
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  const navIcon = document.querySelector(".logo");
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    navIcon.style.height = "100px";
+  } else {
+    navIcon.style.height = "40px";
+  }
+  prevScrollpos = currentScrollPos;
+};
