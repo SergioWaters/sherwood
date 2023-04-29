@@ -20,7 +20,7 @@
   &_part {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
   }
 
   &__inner {
@@ -30,12 +30,13 @@
   }
 
   & .logo {
-    width: 150px;
-    height: 125px;
+    width: 125px;
+    height: 100px;
     background-image: url(../images/logo_small.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    transition: height 0.7s;
   }
 
   & .phone {
