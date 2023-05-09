@@ -1,27 +1,28 @@
+@import "./vars.scss";
+
 // Round buttons with arrow
 .button-circle-right,
 .button-circle-left {
-  box-sizing: border-box;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  border-radius: 50%;
   height: 54px;
   width: 54px;
   padding: 20px;
-  border: 1px solid #303030;
+  border: none;
   z-index: 999;
-  background-color: transparent;
+  background-color: $bgcollight;
   transition: $transition;
 
   &:hover {
-    background-color: #f5f5f5;
+    border: 1px solid $bgcoldark;
     transition: $transition;
   }
 
   &__arrow {
-    background-color: #000000;
+    background-color: $bgcoldark;
     display: block;
     height: 1px;
     width: 16px;
@@ -32,6 +33,11 @@
 
 .button-circle-right {
   &__arrow {
+    &::after,
+    &::before {
+      transition: transform 0.3s;
+    }
+
     &::after {
       content: "";
       position: absolute;
@@ -57,7 +63,7 @@
 
   &:active &__arrow {
     left: 100%;
-    transition: $transition;
+    transition: left $transition;
   }
 }
 
@@ -88,7 +94,13 @@
 
   &:active &__arrow {
     right: 100%;
-    transition: $transition;
+    transition: right $transition;
+  }
+}
+@media (max-width: 500px) {
+  .button-circle-right,
+  .button-circle-left {
+    display: none;
   }
 }
 
