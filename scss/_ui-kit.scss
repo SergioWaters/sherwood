@@ -13,11 +13,12 @@
   border: 1px solid #303030;
   z-index: 999;
   background-color: transparent;
-  transition: $transition;
+  transition: all $transition;
+  cursor: pointer;
 
   &:hover {
-    background-color: #f5f5f5;
-    transition: $transition;
+    background-color: #c9e16580;
+    transition: background-color $transition;
   }
 
   &__arrow {
@@ -56,8 +57,8 @@
   }
 
   &:active &__arrow {
-    left: 100%;
-    transition: $transition;
+    transform: translateX(10px);
+    transition: all $transition;
   }
 }
 
@@ -87,8 +88,8 @@
   }
 
   &:active &__arrow {
-    right: 100%;
-    transition: $transition;
+    transform: translateX(-10px);
+    transition: all $transition;
   }
 }
 
